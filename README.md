@@ -1,4 +1,4 @@
-# ELPHIN_Toolbox
+# ELPHIN Toolbox
 [Excel-Add-in (.xlam)](http://marco-krapf.de/excel/) - Excel-Add-in für erweiterte Funktionen
 
 ## Versionshistorie
