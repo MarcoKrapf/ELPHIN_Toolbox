@@ -1,0 +1,117 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="MyAddInInitialize">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="xlef_tab1" label="ELPHIN Toolbox">
+
+	 <group id="xlef_group1" getLabel="AI_GetLabel">
+ 	 	<splitButton id="xlef_splitButton_undo" size="large" >
+ 			<button id="xlef_btn_undo" getLabel="AI_GetLabel" 
+				getEnabled="IsButtonEnabled"
+				onAction="btnUNDO_onAction" image="undo"
+				getScreentip="AI_GetScreentip"
+				getSupertip="AI_GetSupertip"/>
+  			<menu id="xlef_menu_undo"
+				getSupertip="AI_GetSupertip">
+				<button id="xlef_btn_undo_onoff" getLabel="AI_GetLabel"
+				onAction="btnUNDO_onoff_onAction"
+				getSupertip="AI_GetSupertip"/>
+  			</menu>
+ 		</splitButton>
+	 </group>
+
+	 <group id="xlef_group8" getLabel="AI_GetLabel">
+          <button id="xlef_btn_usedrange" getLabel="AI_GetLabel" size="large" 
+		onAction="btn_usedrange_onAction" image="UsedRange"
+		getScreentip="AI_GetScreentip"
+		getSupertip="AI_GetSupertip"/>
+	 </group>
+
+       <group id="xlef_group2" getLabel="AI_GetLabel">
+          <menu id="xlef_menu_TextKonv" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_TextKonv01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv01" image="TextKonv01"/>
+		<button id="xlef_btn_TextKonv02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv02" image="TextKonv02"/>
+		<button id="xlef_btn_TextKonv03" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv03" image="TextKonv03"/>
+		<button id="xlef_btn_TextKonv04" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv04" image="TextKonv04"/>
+		<button id="xlef_btn_TextKonv05" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv05" image="TextKonv05"/>
+		<button id="xlef_btn_TextKonv06" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_TextKonv06" image="TextKonv06"/>
+	    </menu>
+
+          <menu id="xlef_menu_Zeichen" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_Zeichen_01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_01" image="Zeichen01"/>
+		<button id="xlef_btn_Zeichen_02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_02" image="Zeichen02"/>
+		<button id="xlef_btn_Zeichen_03" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_03" image="Zeichen03"/>
+		<button id="xlef_btn_Zeichen_04" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_04" image="Zeichen04"/>
+		<button id="xlef_btn_Zeichen_05" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_05" image="Zeichen05"/>
+		<button id="xlef_btn_Zeichen_06" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_06" image="Zeichen06"/>
+		<button id="xlef_btn_Zeichen_07" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_07" image="Zeichen07"/>
+		<button id="xlef_btn_Zeichen_08" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_08" image="Zeichen08"/>
+		<button id="xlef_btn_Zeichen_09" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeichen_09" image="Zeichen09"/>
+	    </menu>
+
+          <menu id="xlef_menu_Math" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_Math01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Math01" image="Math01"/>
+		<button id="xlef_btn_Math02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Math02" image="Math02"/>
+	    </menu>
+
+          <menu id="xlef_menu_Funk" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_Funk01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Funk01" image="FF01"/>
+		<button id="xlef_btn_Funk02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Funk02" image="FF02"/>
+	    </menu>
+	 </group>
+
+	 <group id="xlef_group3" getLabel="AI_GetLabel">
+          <menu id="xlef_menu_Zeilen" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_Zeilen01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeilen01" image="ZS02"/>
+		<button id="xlef_btn_Zeilen02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Zeilen02" image="ZS04"/>
+	    </menu>
+
+          <menu id="xlef_menu_Spalten" getLabel="AI_GetLabel" itemSize="large"
+			getScreentip="AI_GetScreentip"
+			getSupertip="AI_GetSupertip" >
+		<button id="xlef_btn_Spalten01" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Spalten01" image="ZS01"/>
+		<button id="xlef_btn_Spalten02" getLabel="AI_GetLabel" getScreentip="AI_GetScreentip" getSupertip="AI_GetSupertip" onAction="xlef_btn_Spalten02" image="ZS03"/>
+	    </menu>
+	 </group>
+
+	 <group id="xlef_group4" getLabel="AI_GetLabel">
+          <button id="xlef_btn_WksVgl" getLabel="AI_GetLabel" size="large" 
+		onAction="btnWKSVGL_onAction" image="Tabellen"
+		getScreentip="AI_GetScreentip"
+		getSupertip="AI_GetSupertip"/>
+	 </group>
+
+	 <group id="xlef_group7" getLabel="AI_GetLabel">
+          <button id="xlef_btn_sgds" getLabel="AI_GetLabel" size="large" 
+		onAction="btn_sgds_onAction" image="SGDS"
+		getScreentip="AI_GetScreentip"
+		getSupertip="AI_GetSupertip"/>
+	 </group>
+
+	 <group id="xlef_group5" getLabel="AI_GetLabel">
+          <button id="xlef_btn_INFO" getLabel="AI_GetLabel" size="large" 
+		onAction="btnINFO_onAction" image="Info"
+		getScreentip="AI_GetScreentip"
+		getSupertip="AI_GetSupertip"/>
+	 </group>
+
+	 <group id="xlef_group6" getLabel="AI_GetLabel">
+          <button id="xlef_btn_spracheDE" getLabel="AI_GetLabel" size="large" 
+		onAction="xlef_btn_sprache_onAction" getVisible="GetVisible" image="FlaggeDE"/>
+          <button id="xlef_btn_spracheEN" getLabel="AI_GetLabel" size="large" 
+		onAction="xlef_btn_sprache_onAction" getVisible="GetVisible" image="FlaggeUK"/>
+	 </group>
+
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
