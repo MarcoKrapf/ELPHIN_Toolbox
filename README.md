@@ -1,25 +1,28 @@
 # ELPHIN Toolbox
-[Excel-Add-in (.xlam)](http://marco-krapf.de/excel/) - Toolbox für erweiterte Funktionen
+[Excel-Add-in (.xlam)](https://marco-krapf.de/add-in-elphin-toolbox/) - Toolbox for enhanced Excel functions
 
-## Versionshistorie
+## Version history
 
-### Version 1.0 (25. April 2017)
-* Alles in Großbuchstaben (Wert/Funktion)
-* Alles in Kleinbuchstaben (Wert/Funktion)
-* Jedes Wort groß schreiben (Wert/Funktion)
-* Leerzeichen links entfernen (Wert)
-* Leerzeichen rechts entfernen (Wert)
-* Leerzeichen links und rechts entfernen (Wert)
-* Alle mehrfahen Leerzeichen entfernen (Wert/Funktion)
-* Auf geschützte Leerzeichen überprüfen
-* Geschützte Leerzeichen ersetzen
-* Auf Steuerzeichen überprüfen
-* Steuerzeichen entfernen
-* Absoluter Wert (Wert/Funktion)
-* Formel zu Wert
-* Formelergebniss null (0) ausblenden
-* Leere Zeilen entfernen
-* Leere Spalten entfernen
-* Zeilenindex merken
-* Spaltenindex merken
-* Worksheets vergleichen
+### Version 2.0 (12 August 2018)
+* SG DataSet Finder for finding matching data records across different Excel files
+* Undo option can be deactivated for performance improvement
+* GUI languages: English and German
+
+### Version 1.0 (25 April 2017)
+* Convert all letters to upper-case letters (as value or function)
+* Convert all letters to lower-case letters (as value or function)
+* Capitalize each word (as value or function)
+* Remove all spaces at the beginning of a cell (as value)
+* Remove all spaces at the end of a cell (as value)
+* Remove all spaces at the beginning and the end of the cell (as value)
+* Remove multiple spaces (as value or function)
+* Check the selected cells for non-breaking spaces
+* Replace non-breaking spaces in the selected cells
+* Check the selected cells for non-printing control characters
+* Remove control characters in the selected cells
+* Absolute value of a real number (as value or function)
+* Convert the result of a formula or function to a value
+* Hide formula result zero (0)
+* Remove empty rows or columns
+* Memorize row or colum nnumber
+* Compare worksheets
